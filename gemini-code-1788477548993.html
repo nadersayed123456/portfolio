@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nader Sayed Khalil | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --primary-soft: #eff6ff;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .profile-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+      flex-shrink: 0;
+    }
+
+    .profile-info { flex: 1; }
+
+    .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .tagline {
+      display: inline-block;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 28px 0 16px 0;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .about-card, .list-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      color: #334155;
+      margin-bottom: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .cert-badge {
+      background: #dbeafe;
+      color: #1e40af;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+
+    .cert-img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Header -->
+    <header class="profile-card">
+      <img src="my-photo.jpg" alt="Nader Sayed Khalil" class="avatar" />
+      <div class="profile-info">
+        <h1 class="name">Nader Sayed Khalil</h1>
+        <span class="tagline">Computer Science Student & Developer</span>
+        <div class="contacts">
+          <span>📍 Fayoum, Egypt</span>
+          <span>📞 +20 10161825930</span>
+          <span>✉️ nader52451478@gmail.com</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <h2 class="section-title">About Me</h2>
+    <div class="about-card">
+      2nd-year Computer Science student at EELU passionate about software development, machine learning, and networking. I enjoy building practical applications, learning modern technical tracks, and expanding my skill set through university coursework and training programs like ITI and DEPI.
+    </div>
+
+    <!-- Certifications -->
+    <h2 class="section-title">Certifications</h2>
+    <div class="list-card">
+      <div style="margin-bottom: 6px;">
+        <span class="cert-badge">Certiport / Pearson VUE</span>
+        <strong style="margin-left: 6px; font-size: 0.95rem;">ITS: Device Configuration and Management</strong>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+        Issued: August 12, 2026 • Verification Code: MK54-s4qq
+      </p>
+      <a href="its-certificate.jpg" target="_blank">
+        <img src="its-certificate.jpg" alt="ITS Certification - Device Configuration and Management" class="cert-img" />
+      </a>
+    </div>
+
+    <!-- Projects -->
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 class="card-title">💳 Credit Card Fraud Detection</h3>
+        <p class="card-desc">Machine learning classification model built to identify imbalanced fraud patterns using SMOTE and Python evaluation metrics.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Colab</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">🏠 Student Housing Web App</h3>
+        <p class="card-desc">A responsive web interface allowing students to browse, filter, and easily find suitable housing options.</p>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">📊 House Price Prediction</h3>
+        <p class="card-desc">Linear regression forecasting model trained to predict housing prices after performing exploratory data analysis.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">🌐 Network Simulation Labs</h3>
+        <p class="card-desc">Configured network topologies, switches, VLANs, and IP routing schemas in Cisco Packet Tracer.</p>
+        <div class="tags">
+          <span class="tag">Packet Tracer</span>
+          <span class="tag">CCNA</span>
+          <span class="tag">Networking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="about-card">
+      <div style="margin-bottom: 12px;">
+        <strong>Languages & Web:</strong>
+        <div class="tags" style="margin-top: 6px;">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <strong>Data Science & Machine Learning:</strong>
+        <div class="tags" style="margin-top: 6px;">
+          <span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">SMOTE</span>
+        </div>
+      </div>
+      <div>
+        <strong>Networking & Tools:</strong>
+        <div class="tags" style="margin-top: 6px;">
+          <span class="tag">Device Configuration (ITS)</span><span class="tag">Cisco Packet Tracer</span><span class="tag">Git / GitHub</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training & Education -->
+    <h2 class="section-title">Training & Education</h2>
+    
+    <div class="list-card">
+      <div style="display: flex; justify-content: space-between;">
+        <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Present</span>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--primary);">Ministry of Communications and Information Technology (MCIT)</div>
+    </div>
+
+    <div class="list-card">
+      <div style="display: flex; justify-content: space-between;">
+        <strong>Summer Training Program</strong>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Completed</span>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--primary);">Information Technology Institute (ITI)</div>
+    </div>
+
+    <div class="list-card">
+      <div style="display: flex; justify-content: space-between;">
+        <strong>B.Sc. in Computer Science & Information Technology</strong>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Expected 2028</span>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--primary);">Egyptian E-Learning University (EELU)</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
